@@ -51,7 +51,3 @@ a = A()
 # a.insfun()      # insfun     {'args': (<__main__.A object at 0x000001F7515BC248>,), 'kwargs': {}}
 #                 # <__main__.A object at 0x000001F7515BC248> <class '__main__.A'>
 # a.clsmethod()   # clsmethod     {'args': (<class '__main__.A'>,), 'kwargs': {}}
-
-fun()           # fun     {'args': (), 'kwargs': {}}
-# a.fun()
-A.fun()
