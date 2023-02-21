@@ -1,6 +1,7 @@
 def decorator(func):
     def inner(*args,**kwargs):
-        print("inner",locals())
+        print("inner", locals())
+        print(func.__name__)
         args[0].ALL = 10086
         func(*args,**kwargs)
 
