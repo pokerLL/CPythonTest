@@ -27,8 +27,8 @@ class A:
             print(sm,type(sm))
     
     @classmethod
-    def clsmethod(*args,**kwargs):
-        print("cleanclsmethod", "   ", locals())
+    def clsfun(*args,**kwargs):
+        print("cleanclsfun", "   ", locals())
     
 
 def fun(*args,**kwargs):
@@ -42,13 +42,13 @@ def fun(*args,**kwargs):
 
 # A.stafun()      # stafun     {'args': (), 'kwargs': {}}
 # A.insfun()      # insfun     {'args': (), 'kwargs': {}}
-# A.clsmethod()   # clsmethod     {'args': (<class '__main__.A'>,), 'kwargs': {}}
+# A.clsfun()   # clsmethod     {'args': (<class '__main__.A'>,), 'kwargs': {}}
 
-a = A()
+# a = A()
 # a.decdclsfun()  # inner {'args': (), 'kwargs': {}, 'func': <function A.clsfun at 0x000001B621C46048>}
 #                 # 10086
 #                 # clsfun     {'args': (<class '__main__.A'>,), 'kwargs': {}}
 # a.stafun()      # stafun     {'args': (), 'kwargs': {}}
 # a.insfun()      # insfun     {'args': (<__main__.A object at 0x000001F7515BC248>,), 'kwargs': {}}
 #                 # <__main__.A object at 0x000001F7515BC248> <class '__main__.A'>
-# a.clsmethod()   # clsmethod     {'args': (<class '__main__.A'>,), 'kwargs': {}}
+# a.clsfun()   # clsmethod     {'args': (<class '__main__.A'>,), 'kwargs': {}}
