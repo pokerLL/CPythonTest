@@ -9,7 +9,9 @@ seq = MySeq()
 for i in seq:
     print(i,end='-')    # 0-1-2-3-4-5-6-7-8-9-
 
-sseq = *seq
-print(sseq)
+print()
 
-print('\n',seq[:-1])    # [0, 1, 2, 3, 4, 5, 6, 7, 8]
+*sseq,_ = seq
+print(sseq)             # [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+print(seq[:-1])         # [0, 1, 2, 3, 4, 5, 6, 7, 8]

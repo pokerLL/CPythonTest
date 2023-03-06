@@ -1,9 +1,3 @@
-def another_generator():
-    yield 1
-    yield 2
-
-def my_generator():
-    yield from another_generator()
-
-for value in my_generator():
-    print(value)
+a  =  "1,2 3.4,5.7 8"
+a.split()
+a.startswith
