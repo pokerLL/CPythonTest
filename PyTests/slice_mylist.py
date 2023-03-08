@@ -19,8 +19,8 @@ class MyList(object):
         if isinstance(index, slice):
             del self.mlist[index]
 
-l = MyList()
+# l = MyList()
 
-l[0]
-l[::-1]
-l[0:10:1]
+# l[0]
+# l[::-1]
+# l[0:10:1]

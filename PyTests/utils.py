@@ -8,8 +8,8 @@ def debug(func):
         local_vars = inspect.currentframe().f_back.f_locals
         # 打印函数名和局部变量
         print(
-f"""Calling {function_name} 
-    with args: {args} 
+f"""Calling {function_name} with
+    args: {args} 
     kwargs: {kwargs} 
     local variables: {local_vars}
     """)
