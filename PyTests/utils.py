@@ -6,13 +6,15 @@ def debug(func):
         function_name = func.__name__
         # 获取局部变量
         local_vars = inspect.currentframe().f_back.f_locals
+        resp = func(*args, **kwargs)
         # 打印函数名和局部变量
         print(
 f"""Calling {function_name} with
     args: {args} 
     kwargs: {kwargs} 
     local variables: {local_vars}
-    """)
+    result: {repr(resp)}
+""")
 
-        return func(*args, **kwargs)
+        return resp
     return wrapper
