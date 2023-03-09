@@ -45,3 +45,4 @@ Calling __init__ with
     local variables: {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x0000022763C5EB48>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': 'd:/Program/Workspace/CPythonTest/PyTests/metaclass_test.py', '__cached__': None, 'debug': <function debug at 0x0000022764138048>, 'MyMeta': <class '__main__.MyMeta'>}
     result: None
 """
+
