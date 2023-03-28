@@ -69,3 +69,30 @@ Calling __main__.StructTuple.__new__ at 2023-03-27 18:49:51.137446 with
 
 """
 
+
+"""
+Calling __main__.StructTupleMeta.__init__ at 2023-03-27 18:50:46.555637 with
+    args:       (<class '__main__.StructTuple'>, 'StructTuple', (<class 'tuple'>,), {'__module__': '__main__', '__qualname__': 'StructTuple', '_fields': [], '__new__': <function debug.<locals>.wrapper at 0x000002171050B0D8>, '__classcell__': <cell at 0x00000217104F8228: StructTupleMeta object at 0x000002171056EC18>})
+    kwargs:     {}
+    local variables:    {'__name__': '__main__', '__doc__': '\n>>> s = Stock(\'ACME\', 50, 91.1)\n>>> s\n(\'ACME\', 50, 91.1)\n>>> s[0]\n\'ACME\'\n>>> s.name\n\'ACME\'\n>>> s.shares * s.price\n4555.0\n>>> s.shares = 23\nTraceback (most recent call last):\n    File "<stdin>", line 1, in <module>\nAttributeError: can\'t set attribute\n', '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x000002170FFFE808>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': 'c:/Workspace/Program/CPythonTest/PyTests/operator_test_itemgetter.py', '__cached__': None, 'operator': <module 'operator' from 'C:\\Users\\datagrand\\miniconda3\\envs\\pyt\\lib\\operator.py'>, 'debug': <function debug at 0x00000217105054C8>, 'StructTupleMeta': <class '__main__.StructTupleMeta'>}
+    result:     None
+    process_time:       5.600000000001437e-06
+    pref_counter_time:  2.3799999999997434e-05
+
+Calling __main__.StructTupleMeta.__init__ at 2023-03-27 18:50:46.557637 with
+    args:       (<class '__main__.Stock'>, 'Stock', (<class '__main__.StructTuple'>,), {'__module__': '__main__', '__qualname__': 'Stock', '_fields': ['name', 'shares', 'price']})
+    kwargs:     {}
+    local variables:    {'__name__': '__main__', '__doc__': '\n>>> s = Stock(\'ACME\', 50, 91.1)\n>>> s\n(\'ACME\', 50, 91.1)\n>>> s[0]\n\'ACME\'\n>>> s.name\n\'ACME\'\n>>> s.shares * s.price\n4555.0\n>>> s.shares = 23\nTraceback (most recent call last):\n    File "<stdin>", line 1, in <module>\nAttributeError: can\'t set attribute\n', '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x000002170FFFE808>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': 'c:/Workspace/Program/CPythonTest/PyTests/operator_test_itemgetter.py', '__cached__': None, 'operator': <module 'operator' from 'C:\\Users\\datagrand\\miniconda3\\envs\\pyt\\lib\\operator.py'>, 'debug': <function debug at 0x00000217105054C8>, 'StructTupleMeta': <class '__main__.StructTupleMeta'>, 'StructTuple': <class '__main__.StructTuple'>}
+    result:     None
+    process_time:       1.4700000000006375e-05
+    pref_counter_time:  2.5299999999998934e-05
+
+Calling __main__.StructTuple.__new__ at 2023-03-27 18:50:46.559639 with
+    args:       (<class '__main__.Stock'>, 'ACME', 50, 91.1)
+    kwargs:     {}
+    local variables:    {'__name__': '__main__', '__doc__': '\n>>> s = Stock(\'ACME\', 50, 91.1)\n>>> s\n(\'ACME\', 50, 91.1)\n>>> s[0]\n\'ACME\'\n>>> s.name\n\'ACME\'\n>>> s.shares * s.price\n4555.0\n>>> s.shares = 23\nTraceback (most recent call last):\n    File "<stdin>", line 1, in <module>\nAttributeError: can\'t set attribute\n', '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x000002170FFFE808>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': 'c:/Workspace/Program/CPythonTest/PyTests/operator_test_itemgetter.py', '__cached__': None, 'operator': <module 'operator' from 'C:\\Users\\datagrand\\miniconda3\\envs\\pyt\\lib\\operator.py'>, 'debug': <function debug at 0x00000217105054C8>, 'StructTupleMeta': <class '__main__.StructTupleMeta'>, 'StructTuple': <class '__main__.StructTuple'>, 'Stock': <class '__main__.Stock'>}
+    result:     ('ACME', 50, 91.1)
+    process_time:       6.900000000004125e-06
+    pref_counter_time:  1.789999999998737e-05
+
+"""
