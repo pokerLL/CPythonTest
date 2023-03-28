@@ -13,7 +13,7 @@ def debug(func):
 
     def wrapper(*args, **kwargs):
         # 获取函数名称
-        function_name = func.__module__+ '.' +func.__name__
+        function_name = func.__module__+ '.' +func.__qualname__
         # 获取局部变量
         local_vars = inspect.currentframe().f_back.f_locals
         local_time = datetime.now()
