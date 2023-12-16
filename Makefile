@@ -1,7 +1,3 @@
-# pull push 
-
-# Path: Makefile
-
 pull:
 	git pull
 
