@@ -1,18 +1,20 @@
-from threading import Thread, Lock
+import threading
 
-number = 0
+n = 0
 
-def target():
-    global number
-    for _ in range(1000000):
-        number += 1
+def foo():
+    global n
+    n += 1
 
-thread_01 = Thread(target=target)
-thread_02 = Thread(target=target)
-thread_01.start()
-thread_02.start()
+threads = []
+for i in range(100):
+    t = threading.Thread(target=foo)
+    threads.append(t)
 
-thread_01.join()
-thread_02.join()
+for t in threads:
+    t.start()
 
-print(number)
+for t in threads:
+    t.join()
+
+print(n)
