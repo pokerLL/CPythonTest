@@ -7,7 +7,7 @@ def foo():
     n += 1
 
 threads = []
-for i in range(100):
+for i in range(1000):
     t = threading.Thread(target=foo)
     threads.append(t)
 
