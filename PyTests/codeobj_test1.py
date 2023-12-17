@@ -16,6 +16,59 @@ class F:
 
 func()
 
+"""
+pycodeobj 和 pyframeobj
+
+1. pycodeobj 在编译时创建，是静态的。
+2. pyframeobj 在运行时创建，是动态的。一个 pycodeobj 可以对应多个 pyframeobj，每个 pyframeobj 都有一个对应的 pycodeobj。
+3. pycodeobj 主要存储静态信息，例如：
+   - co_name            # 对象名称
+   - co_argcount        # 参数个数（非函数一般为0）
+   - co_code            # 字节码的序列化形式
+   - co_consts          # 使用到的常量
+   - co_names           # 使用到的名称
+   - co_nlocals         # 局部变量个数
+   - co_varnames        # 局部变量名称
+   - co_flags           # 编译标志
+   - co_filename        # 文件名
+   - co_firstlineno     # 源代码第一行的行号
+   - co_freevars        # 自由变量（未在局部绑定的变量）
+   - co_cellvars        # 单元变量（局部作用域但在内嵌函数中使用的变量）-  即闭包变量
+   - co_kwonlyargcount  # 仅关键字参数的数量
+   - co_posonlyargcount # 仅位置参数的数量
+   - co_stacksize       # 执行栈大小
+   - co_lnotab          # 行号表
+   - co_linetable       # 行号表
+   - co_positions       # 字节码中的位置
+   - co_lines           # 源代码行号
+   - co_qualname        # 对象的限定名称
+   - co_exceptiontable  # 异常表
+4. pyframeobj 用来存储运行时信息，例如：
+   - f_code             # 关联的代码对象
+   - f_back             # 调用此帧的帧 - 上一帧
+   - f_builtins         # 内置名称空间
+   - f_globals          # 全局名称空间
+   - f_locals           # 局部名称空间
+   - f_lineno           # 当前行号
+   - f_lasti            # 最后执行的指令的索引
+   - f_trace            # 跟踪函数
+   - f_exc_type         # 当前异常类型
+   - f_exc_value        # 当前异常值
+   - f_exc_traceback    # 当前异常的追溯信息
+   - f_restricted       # 是否为受限制的执行
+   - f_stacktop         # 值栈的顶部
+   - f_valuestack       # 值栈
+   - f_blockstack       # 块栈
+   - f_localsplus       # 局部变量和其它局部变量存储
+   - f_iblock           # 当前正在处理的异常块的索引
+   - f_executing        # 是否正在执行
+   - f_generator        # 生成器相关信息
+   - f_last_asynci      # 最后异步执行的指令索引
+   - f_lasti2           # 上次执行的指令索引
+   - f_trace_*: 跟踪函数的特定信息（如 f_trace_lines、f_trace_opcodes 等）
+
+"""
+
 """ 
 >>> text = open("./PyTests/codeobj_test1.py", 'r').read()
 >>> text
