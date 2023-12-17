@@ -59,13 +59,7 @@ pycodeobj 和 pyframeobj
    - f_stacktop         # 值栈的顶部
    - f_valuestack       # 值栈
    - f_blockstack       # 块栈
-   - f_localsplus       # 局部变量和其它局部变量存储
-   - f_iblock           # 当前正在处理的异常块的索引
-   - f_executing        # 是否正在执行
-   - f_generator        # 生成器相关信息
-   - f_last_asynci      # 最后异步执行的指令索引
-   - f_lasti2           # 上次执行的指令索引
-   - f_trace_*: 跟踪函数的特定信息（如 f_trace_lines、f_trace_opcodes 等）
+   - f_localsplus       # 局部变量和其它局部变量存储 - 实际就是运行时的栈
 
 """
 
