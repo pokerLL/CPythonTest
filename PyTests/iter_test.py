@@ -2,7 +2,7 @@ it = iter(list(range(10)))
 
 print(f'2 in it: {2 in it}')    # True
 
-print(f'next(it): {next(it)}')  # False
+print(f'next(it): {next(it)}')  # 3
 
 import dis
 
